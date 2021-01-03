@@ -1,13 +1,9 @@
 package com.example.teste.activities
 
-import android.app.PendingIntent.getService
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.EditText
-import android.widget.Toast
 import com.example.teste.dto.DtoUser
 import com.example.teste.services.RetrofitService
 import com.example.teste.R
