@@ -13,18 +13,18 @@ import com.example.teste.R
 
 class FavoritosFragment : Fragment(){
 
-    private lateinit var FavoritosViewModel: FavoritosViewModel
+    private lateinit var favoritosViewModel: FavoritosViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        FavoritosViewModel =
+        favoritosViewModel =
             ViewModelProviders.of(this).get(FavoritosViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_favoritos, container, false)
         val textView: TextView = root.findViewById(R.id.text_favoritos)
-        FavoritosViewModel.text.observe(viewLifecycleOwner, Observer {
+        favoritosViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

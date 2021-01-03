@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.Navigation
 import com.example.teste.R
 import com.example.teste.ui.home.HomeViewModel
 
@@ -26,7 +27,10 @@ class HomeFragment : Fragment() {
         val textView: TextView = root.findViewById(R.id.text_home)
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
+            Navigation.createNavigateOnClickListener(R.id.navigation_home, null)
         })
+
+
         return root
     }
 }

@@ -13,18 +13,18 @@ import com.example.teste.R
 
 class IngressoFragment : Fragment(){
 
-    private lateinit var IngressoViewModel: IngressoViewModel
+    private lateinit var ingressoViewModel: IngressoViewModel
 
      override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        IngressoViewModel =
+        ingressoViewModel =
             ViewModelProviders.of(this).get(IngressoViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_ingresso, container, false)
         val textView: TextView = root.findViewById(R.id.text_ingresso)
-        IngressoViewModel.text.observe(viewLifecycleOwner, Observer {
+        ingressoViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

@@ -13,18 +13,18 @@ import com.example.teste.R
 
 class PerfilFragment : Fragment() {
 
-    private lateinit var PerfilViewModel: PerfilViewModel
+    private lateinit var perfilViewModel: PerfilViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        PerfilViewModel =
+        perfilViewModel =
             ViewModelProviders.of(this).get(PerfilViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_perfil, container, false)
         val textView: TextView = root.findViewById(R.id.text_perfil)
-        PerfilViewModel.text.observe(viewLifecycleOwner, Observer {
+        perfilViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
