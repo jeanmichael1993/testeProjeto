@@ -31,10 +31,5 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_home, R.id.navigation_pesquisa, R.id.navigation_ingresso,R.id.navigation_favoritos,R.id.navigation_perfil))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-        fun navegar(view: View) {
-            val intent = Intent(this, CadastroDeUsuarioActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

@@ -50,7 +50,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.example.teste.MainActivity" />
         </activity>
         <activity
             android:name=".activities.FragmentPerfilActivity"
@@ -58,7 +58,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.example.teste.MainActivity" />
         </activity>
         <activity
             android:name=".MainActivity"

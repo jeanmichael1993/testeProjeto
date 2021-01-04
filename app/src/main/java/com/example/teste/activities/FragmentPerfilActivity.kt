@@ -8,17 +8,16 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.teste.R
 
-class FragmentPerfilActivity : AppCompatActivity(){
+class FragmentPerfilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_perfil)
     }
 
-    fun navegar(view: View){
+    fun navegar(view: View) {
         val intent = Intent(this, CadastroDeUsuarioActivity::class.java)
         startActivity(intent)
     }
-
 
 
 }

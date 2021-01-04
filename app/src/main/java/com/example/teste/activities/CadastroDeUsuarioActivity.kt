@@ -12,14 +12,17 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+
 class CadastroDeUsuarioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_de_usuario)
     }
 
+    val i =intent
+
     fun cadastrar(view: View) {
-        var TAG = "CadastroDeUsuarioActivi"
+        var TAG = "CadastroDeUsuarioActivity"
 
         var email = et_cadastro_usuario_email.text.toString()
         var nome = et_cadastro_usuario_nome.text.toString()
