@@ -1,20 +1,15 @@
-package com.example.teste
+package com.example.teste.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.MenuItem
 import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.teste.activities.CadastroDeUsuarioActivity
-import com.google.android.material.navigation.NavigationView
+import com.example.teste.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,8 +23,18 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
 
         val appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.navigation_home, R.id.navigation_pesquisa, R.id.navigation_ingresso,R.id.navigation_favoritos,R.id.navigation_perfil))
+            R.id.navigation_home,
+            R.id.navigation_pesquisa,
+            R.id.navigation_ingresso,
+            R.id.navigation_favoritos,
+            R.id.navigation_perfil
+        ))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    fun cadastrarUsuario(view: View) {
+        val intent = Intent(this, CadastroDeUsuarioActivity::class.java)
+        startActivity(intent)
     }
 }

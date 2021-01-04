@@ -14,10 +14,7 @@ class FragmentPerfilActivity : AppCompatActivity() {
         setContentView(R.layout.fragment_perfil)
     }
 
-    fun navegar(view: View) {
-        val intent = Intent(this, CadastroDeUsuarioActivity::class.java)
-        startActivity(intent)
-    }
+
 
 
 }

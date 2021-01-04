@@ -28,5 +28,14 @@
         android:id="@+id/navigation_perfil"
         android:name="com.example.teste.ui.perfil.PerfilFragment"
         android:label="Perfil"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_navigation_perfil_to_cadastroDeUsuarioActivity"
+            app:destination="@id/cadastroDeUsuarioActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/cadastroDeUsuarioActivity"
+        android:name="com.example.teste.activities.CadastroDeUsuarioActivity"
+        android:label="activity_cadastro_de_usuario"
+        tools:layout="@layout/activity_cadastro_de_usuario" />
 </navigation>
