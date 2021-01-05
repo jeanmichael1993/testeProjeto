@@ -8,11 +8,11 @@ import retrofit2.http.POST
 import retrofit2.http.PUT
 
 interface ApiEndPoint {
-    @GET("users")
+    @GET("usuarios")
     //users é api que está consumindo, por exemplo https://jsonplaceholder.typicode.com/users"
     fun obterUsuarios(): Call<List<DtoUser>>
     //User é o nome da classe, obterUsuario é o nome do metodo, : é mostrando o tipo do return
 
-    @POST("users")
+    @POST("usuarios")
     fun cadastrarUsuario(@Body dtoUser: DtoUser): Call<DtoUser>
 }

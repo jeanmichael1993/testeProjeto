@@ -13,8 +13,4 @@ class FragmentPerfilActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_perfil)
     }
-
-
-
-
 }

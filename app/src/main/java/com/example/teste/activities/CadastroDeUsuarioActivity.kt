@@ -24,16 +24,29 @@ class CadastroDeUsuarioActivity : AppCompatActivity() {
     fun cadastrar(view: View) {
         var TAG = "CadastroDeUsuarioActivity"
 
-        var email = et_cadastro_usuario_email.text.toString()
+
         var nome = et_cadastro_usuario_nome.text.toString()
-        var telefone = et_cadastro_usuario_phone.text.toString()
+        var razaoSocial = et_cadastro_usuario_sobrenome.text.toString()
+        var email = et_cadastro_usuario_email.text.toString()
         var senha = et_cadastro_usuario_password.text.toString()
+        var telefone = et_cadastro_usuario_phone.text.toString()
+        var dataNascimento = et_cadastro_usuario_data.text.toString()
+        var cpfcnpj = et_cadastro_usuario_cpfcnpj.text.toString()
 
         val dtoUser: DtoUser = DtoUser()
+
+        dtoUser.nome = nome
+        dtoUser.razaoSocial = razaoSocial
         dtoUser.email = email
-        dtoUser.name = nome
-        dtoUser.phone = telefone
-        dtoUser.password = senha
+        dtoUser.senha = senha
+        dtoUser.telefone = telefone
+        dtoUser.dataNascimento = dataNascimento
+        if(cpfcnpj.length == 11){
+            dtoUser.cpf = cpfcnpj
+        }
+        else if (cpfcnpj.length == 14){
+            dtoUser.cnpj = cpfcnpj
+        }
 
         val serviceRetrofit = RetrofitService()
         serviceRetrofit.api?.cadastrarUsuario(dtoUser)?.enqueue(object : Callback<DtoUser> {
@@ -57,7 +70,7 @@ class CadastroDeUsuarioActivity : AppCompatActivity() {
                 val lista = response?.body();
                 if (lista != null) {
                     for (user in lista) {
-                        Log.d("Resposta", user.name.toString())
+                        Log.d("Resposta", user.nome.toString())
                     }
                 }
             }

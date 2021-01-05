@@ -31,4 +31,5 @@ class PerfilFragment : Fragment() {
         })
         return root
     }
+
 }
