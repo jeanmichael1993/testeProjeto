@@ -37,4 +37,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, CadastroDeUsuarioActivity::class.java)
         startActivity(intent)
     }
+
+
 }
