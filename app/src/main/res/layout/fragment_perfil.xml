@@ -11,14 +11,14 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="358dp"
         android:layout_height="283dp"
-        android:layout_marginEnd="10dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422">
+        app:layout_constraintVertical_bias="0.433">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -33,14 +33,15 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93" />
+        app:layout_constraintVertical_bias="0.868" />
 
     <EditText
         android:id="@+id/et_cadastro_usuario_email"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="24dp"
-        android:background="#9AFFB4"
+        android:backgroundTint="#9AFFB4"
+        android:background="@drawable/rounded_corners"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textPersonName"
@@ -55,9 +56,10 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="10dp"
-        android:background="#9AFFB4"
         android:ems="10"
         android:hint="Senha"
+        android:backgroundTint="#9AFFB4"
+        android:background="@drawable/rounded_corners"
         android:inputType="textPassword"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,6 +73,7 @@
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="#00BCD4"
+        android:background="@drawable/rounded_corners"
         android:text="Entrar"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,10 +112,13 @@
 
     <Button
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="213dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#2196F3"
         android:onClick="cadastrarUsuario"
-        android:text="Cadastre-se"
+        android:text="Cadastre-se!"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
