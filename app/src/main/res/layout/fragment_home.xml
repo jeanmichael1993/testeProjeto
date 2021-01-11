@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="TextView"
+        android:textColor="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,11 +33,13 @@
 
     <SearchView
         android:id="@+id/pesquisando"
-        android:layout_width="151dp"
+        android:layout_width="161dp"
         android:layout_height="31dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:background="#B3FFFFFF"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#B3FFFFFF"
+        android:iconifiedByDefault="false"
         android:queryHint="pesquisar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.581"

@@ -27,7 +27,7 @@ class CadastroDeUsuarioActivity : AppCompatActivity() {
 
         var nome = et_cadastro_usuario_nome.text.toString()
         var razaoSocial = et_cadastro_usuario_sobrenome.text.toString()
-        var email = et_cadastro_usuario_email.text.toString()
+        var email = et_cadastro_evento_titulo.text.toString()
         var senha = et_cadastro_usuario_password.text.toString()
         var telefone = et_cadastro_usuario_phone.text.toString()
         var dataNascimento = et_cadastro_usuario_data.text.toString()
