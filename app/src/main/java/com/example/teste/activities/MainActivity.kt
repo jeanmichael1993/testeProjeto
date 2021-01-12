@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-    fun sliderImagem(view: ViewAnimator){
+    fun sliderImagem(view: View){
         val rocketImage: ImageView = findViewById(R.id.slider)
         rocketImage.setImageResource(R.drawable.evento_banner)
 
